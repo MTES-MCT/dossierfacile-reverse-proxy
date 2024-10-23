@@ -20,3 +20,165 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+
+server {
+    listen <%= ENV['PORT'] %>;
+    server_name docs.dossierfacile.logement.gouv.fr;
+
+    location = /category/125-faq-proprietaire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/category/proprietaire-cyzg3f/;
+    }
+    location = /category/27-quest-ce-que-dossierfacile {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/dossierfacile-simplifiez-votre-dossier-de-location-dvw117/?bust=1721812416352;
+    }
+    location = /article/31-gestion-des-donnees-et-securite {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/gestion-des-donnees-et-securite-new-1d3d36d/?bust=1718693015989;
+    }
+    location = /article/48-dossier-couple-2023 {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-constituer-un-dossier-de-location-en-couple-26ajqi/;
+    }
+    location = /article/25-problemes-pour-completer-et-soumettre-son-dossier-faq {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/problemes-pour-completer-et-soumettre-son-dossier-faq-1nzjv3y/;
+    }
+    location = /article/7-ajout-dun-colocataire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-constituer-un-dossier-de-location-en-famille-ou-entre-amies-ow7uhc/;
+    }
+    location = /article/30-se-connecter-sur-son-compte-personnel {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/creer-ou-se-connecter-a-son-compte-personnel-avec-un-mail-qe0bfi/?bust=1721809571017;
+    }
+    location = /article/63-avant-de-commencer {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/avant-de-commencer-1d8e4nd/;
+    }
+    location = /article/123-pourquoi-mon-dossier-nest-pas-valide {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/pourquoi-mon-dossier-nest-pas-valide-tdgzw/;
+    }
+    location = /article/34-les-modifications-demandees {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/pourquoi-mon-dossier-necessite-une-modification-493qkc/;
+    }
+    location = /article/90-visualiserpartagerson-dossier-valide {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-visualiser-et-partager-son-dossier-valide-1orckmm/?bust=1725870819102;
+    }
+    location = /article/33-la-validation-du-dossier {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-mon-dossier-est-il-valide-1oo804g/;
+    }
+    location = /article/39-candidater-au-bien-dun-proprietaire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/candidater-au-bien-dun-proprietaire-1u59jkz/?bust=1728556249703;
+    }
+    location = /article/26-supprimer-son-compte {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/supprimer-son-compte-ccyu3l/?bust=1717069347622;
+    }
+    location = /article/60-ajoutsuppressionrevenu {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/ajouter-ou-supprimer-un-revenu-55alsr/;
+    }
+    location = /article/45-franceconnect {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/utilisation-de-franceconnect-dans-dossierfacile-p7fiv0/?bust=1717075685311;
+    }
+    location = /article/138-changer-le-nom-du-titulaire-du-dossier {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/connexion-via-franceconnect-changer-le-nom-du-titulaire-du-dossier-ubqgjg/?bust=1726139506654;
+    }
+    location = /article/12-scanner-un-document {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/scanner-un-document-1361saq/;
+    }
+    location = /article/38-reduire-la-taille-dun-fichier {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/reduire-la-taille-dun-fichier-16cndew/;
+    }
+    location = /article/11-modifier-un-document {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/modifier-un-document-1m6fity/;
+    }
+    location = /article/93-liste-des-documents-a-fournir-2-0 {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/liste-des-documents-a-fournir-scnv25/;
+    }
+    location = /article/91-justificatifs-situation-professionnelle {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/3-justificatifs-de-situation-professionnelle-rpepjc/;
+    }
+    location = /article/88-avis-dimposition {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/5-avis-dimposition-eg82wt/;
+    }
+    location = /article/87-2-justificatif-domicile {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/2-justificatif-domicile-bon-paiement-loyers-1ftrkb8/;
+    }
+    location = /article/56-6-les-pieces-du-ou-des-garant-s {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/6-les-justificatifs-du-ou-des-garants-1nt94gc/;
+    }
+    location = /article/92-justificatif-ressources-2-0 {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/4-justificatifs-ressources-1uyf090/;
+    }
+    location = /article/94-1-piece-identite {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/je-nai-pas-davis-dimposition-francais-comment-faire-12f1flw/?bust=1717080038854;
+    }
+    location = /article/76-justificatifsituationprofessionnelleetudiant {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/3-justificatif-situation-professionnelle-etudiant-k8hpy0/;
+    }
+    location = /article/79-remplir-son-dossier-etudiant {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/justificatifs-a-fournir-pour-un-etudiant-jifk1e/;
+    }
+    location = /article/80-justificatifressourcesetudiant {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/4-justificatifs-ressources-etudiant-m1r5ki/;
+    }
+    location = /article/99-3-justificatifssituation-professionnellefonction-publique {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/3-justificatifssituation-professionnellefonction-publique-whjgc/;
+    }
+    location = /article/96-3-justificatifssituation-professionnelleartiste-auteur {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/3-justificatifssituation-professionnelleartiste-auteur-18ar6s/;
+    }
+
+    location = /article/59-4-justificatifressources-retraites {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/4-justificatifressourcesretraites-wf12gd/;
+    }
+    location = /article/65-pieces-a-fournir-pour-un-retraite {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/justificatifs-a-fournir-pour-un-retraite-6yzdy8/;
+    }
+    location = /article/83-justificatifsituationprofessionnelleautoentrepreneur {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/justificatifs-pour-un-auto-entrepreneur-1v4blbx/;
+    }
+    location = /article/82-justificatifs-ressources-autoentrepreneur {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/4-justificatifs-ressourcesautoentrepreneur-13bcv2i/;
+    }
+    location = /article/89-justificatifs-pour-un-auto-entrepreneur {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/justificatifs-pour-un-auto-entrepreneur-1v4blbx/;
+    }
+    location = /article/128-traduction-en-francais-et-en-euros {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/simplifier-la-location-pour-les-expatries-traduction-simplifiee-en-francais-1wo4sm8/;
+    }
+    location = /article/129-si-la-personne-vient-darriver-en-france-et-est-hebergee-par-un-tiers-ou-un-organisme-que-peut-elle-fournir-comme-document-de-domiciliation {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/document-de-domiciliation-pour-nouveaux-arrivants-heberges-12qpdzk/;
+    }
+    location = /article/130-si-la-personne-vient-darriver-en-france-et-cherche-actuellement-un-logement-quelles-sont-les-options-pour-un-logement-temporaire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-prouver-son-adresse-pour-un-nouvel-arrivant-en-france-occupant-un-logement-temporaire-y48e0v/;
+    }
+    location = /article/131-peut-on-utiliser-une-attestation-de-laboratoire-confirmant-la-venue-du-chercheur-comme-document-de-domiciliation {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/peut-on-utiliser-une-attestation-de-laboratoire-confirmant-la-venue-du-chercheur-comme-document-de-domiciliation-1ttghq8/;
+    }
+    location = /article/132-absence-de-quittance-de-loyers-comment-faire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/absence-de-quittance-de-loyers-comment-faire-cqv13m/;
+    }
+    location = /article/133-comment-renseigner-une-pension-que-mes-parents-me-versent {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/comment-renseigner-une-pension-que-mes-parents-me-versent-2jwylo/;
+    }
+    location = /article/134-je-nai-pas-davis-dimposition-francais-comment-faire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/je-nai-pas-davis-dimposition-francais-comment-faire-12f1flw/;
+    }
+    location = /article/36-propietaires-ajouter-un-candidat {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/proprietaires-parametrer-sa-propriete-et-ajouter-un-candidat-1btt70k/;
+    }
+    location = /article/120-la-liste-exacte-des-pieces-demandees-pour-deposer-un-dossier {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/quelle-est-la-liste-precise-des-pieces-requises-pour-soumettre-un-dossier-11r0am0/;
+    }
+    location = /article/122-quelle-est-la-procedure-pour-quun-proprietaire-telecharge-les-pieces-fournies-par-un-candidat-dans-son-espace-proprietaire- {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/quelle-est-la-procedure-pour-quun-proprietaire-telecharge-les-pieces-fournies-par-un-candidat-dans-son-espace-proprietaire-frb2fs/;
+    }
+    location = /article/118-que-voit-un-candidat-comme-informations-du-proprietaire {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/lorsquun-candidat-clique-sur-le-lien-de-la-propriete-quelles-informations-du-proprietaire-peut-il-voir-l0sxrk/;
+    }
+    location = /article/119-que-se-passe-t-il-si-le-candidat-na-pas-fini-de-deposer-ses-pieces-le-proprietaire-peut-il-le-voir {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/que-se-passe-t-il-si-le-candidat-na-pas-fini-de-deposer-ses-pieces-le-proprietaire-peut-il-le-voir-5t5m6l/;
+    }
+    location = /article/121-est-il-possible-de-rejeter-ou-daccepter-un-candidat-directement-sur-la-plateforme- {
+        return 301 https://aide.dossierfacile.logement.gouv.fr/fr/article/est-il-possible-de-rejeter-ou-daccepter-un-candidat-directement-sur-la-plateforme-616bfl/;
+    }
+
+    # global redirection
+    location / {
+        return 301 https://aide.dossierfacile.logement.gouv.fr;
+    }
+}
