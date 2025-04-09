@@ -2,27 +2,6 @@ proxy_cache_path /app/dist keys_zone=cache:30m;
 
 server {
     listen <%= ENV['PORT'] %>;
-    server_name <%= ENV['PUBLIC_METABASE_DOMAIN'] %>;
-
-    location /auth {
-        deny all;
-    }
-    location / {
-        if ($request_method !~ ^(GET|HEAD)$ ) {
-            return 403;
-        }
-        proxy_pass <%= ENV['PRIVATE_METABASE_URL'] %>;
-        proxy_cache cache;
-        proxy_cache_valid 200 302 1h;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-
-server {
-    listen <%= ENV['PORT'] %>;
     server_name docs.dossierfacile.logement.gouv.fr;
 
     location = /category/125-faq-proprietaire {
